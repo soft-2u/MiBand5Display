@@ -1,0 +1,186 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "88a0230a123bc6060334ef64720c8677",
+    "entities": [
+      {
+        "tableName": "tblThemeFavorite",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `themeid` INTEGER NOT NULL, `date_add` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "themeid",
+            "columnName": "themeid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date_add",
+            "columnName": "date_add",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tblThemeHistory",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`themeid` INTEGER NOT NULL, `date_add` INTEGER, PRIMARY KEY(`themeid`))",
+        "fields": [
+          {
+            "fieldPath": "themeid",
+            "columnName": "themeid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date_add",
+            "columnName": "date_add",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "themeid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tblThemeRequest",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`themeid` INTEGER NOT NULL, `date_add` INTEGER, `request_id` TEXT, `request_content` TEXT, `request_status_code` INTEGER NOT NULL, PRIMARY KEY(`themeid`))",
+        "fields": [
+          {
+            "fieldPath": "themeid",
+            "columnName": "themeid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date_add",
+            "columnName": "date_add",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "request_id",
+            "columnName": "request_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "request_content",
+            "columnName": "request_content",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "request_status_code",
+            "columnName": "request_status_code",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "themeid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tblThemeUserMaking",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `base_theme_id` INTEGER NOT NULL, `theme_json` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "base_theme_id",
+            "columnName": "base_theme_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "theme_json",
+            "columnName": "theme_json",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "tblThemeMadeByUser",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`publish_id` TEXT NOT NULL, `date_add` INTEGER, `cover_url` TEXT, `public_status_code` INTEGER NOT NULL, PRIMARY KEY(`publish_id`))",
+        "fields": [
+          {
+            "fieldPath": "publish_id",
+            "columnName": "publish_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date_add",
+            "columnName": "date_add",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cover_url",
+            "columnName": "cover_url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "public_status_code",
+            "columnName": "public_status_code",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "publish_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '88a0230a123bc6060334ef64720c8677')"
+    ]
+  }
+}

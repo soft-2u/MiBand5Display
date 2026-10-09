@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>MiBand 4 Display | Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="category" content="news" />
+    <meta name="keywords" content="miband 4, mi smart band 5, gallery" />
+    <meta name="description" content="great gallery for mi smart band 5" />
+    <meta name="msnbot" content="great gallery for mi smart band 5" />
+    <meta name="author" content="Lý Quế Lâm" />
+    <meta name="title" content="MiBand 4 Display" />
+    <meta name="language" content="Vietnamese" />
+    <link href="#" hreflang="vi-vn" rel="alternate" title="MiBand 4 Display" type="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
+</head>
+<body>
+    <div>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn"></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="faq.html">FAQ</a>
+				<a href="instructions.html">Install Instructions</a>
+				<a href="instructions1.html" class="dropdown-child">Display</a>
+				<!-- <a href="instructions2.html" class="dropdown-child">Icon</a>
+				<a href="instructions3.html" class="dropdown-child">Font</a> -->
+			</div>
+		</div>
+        <div class="title">FAQ</div>
+
+		<p><strong>Display:</strong></p>
+		<button type="button" class="collapsible">Cannot download </button>
+		<div class="content">
+		  <p>After tap the <strong>Download</strong> button, please select <strong>Allow storage access</strong>. Then try again.</p>
+		</div>
+		<button type="button" class="collapsible">Does not appear in the Mi Fit app </button>
+		<div class="content">
+		  <p>After tap the <strong>Download</strong> button, be sure to tap the <strong>Install</strong> button. Then the method selection dialog appears, select <strong>Add to Mi Fit</strong> app. If it still doesn't appear, try closing and reopening the Mi Fit app.</p>
+		  <p><strong>Note:</strong> if the method selection dialog doesn't appear, go to <img class="icon" src="../img/settings.png" /><strong>Settings</strong> and <strong>Reset installation method</strong>.</p>
+		  <p><strong>Note:</strong> also, you can install the Display faster by <strong>Sync via Bluetooth</strong>.</p>
+		  <p><i>With Android 11 onwards: Sync via Bluetooth is the only way to install it.</i></p>
+		</div>
+		<br/>
+		<p><strong>General:</strong></p>
+		<button type="button" class="collapsible">How to sync over Bluetooth?</button>
+		<div class="content">
+		  <p>Just open the Mi Fit app once and connect to your mi smart band 5. Then switch to this application, select the Display/Icon/Font to be installed. The method selection dialog appears, select <strong>Sync via Bluetooth</strong>. Sync will take place.</p>
+		  <p><strong>Note:</strong> if the method selection dialog doesn't appear, go to <img class="icon" src="../img/settings.png" /><strong>Settings</strong> and <strong>Reset installation method</strong>.</p>
+		</div>
+		<button type="button" class="collapsible">The mi smart band 5 device is not detected</button>
+		<div class="content">
+		  <p>Make sure <strong>Bluetooth</strong> and <strong>Location</strong> services are turned on, leaving mi smart band 5 near your device.</p>
+		  <p><strong>Note:</strong> Android 6 onwards announced <strong>Location</strong> permission is required for Bluetooth scanning to work.</p>
+		</div>
+		<button type="button" class="collapsible">Bluetooth Sync failed</button>
+		<div class="content">
+		  <p>Keep mi smart band 5 near your phone. Keep your phone on, avoid turning off the screen or locking it. Required: <strong>Bluetooth</strong> and <strong>Location</strong> services are turned on.</p>
+		  <p><strong>Note:</strong> Android 6 onwards announced <strong>Location</strong> permission is required for Bluetooth scanning to work.</p>
+		</div>
+    </div>
+</body>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
+	
+	
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "block";
+		}
+	  });
+	}
+</script>
+</html>

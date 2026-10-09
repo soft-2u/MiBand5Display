@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>MiBand 4 Display | Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="category" content="news" />
+    <meta name="keywords" content="miband 4, mi smart band 5, gallery" />
+    <meta name="description" content="great gallery for mi smart band 5" />
+    <meta name="msnbot" content="great gallery for mi smart band 5" />
+    <meta name="author" content="Lý Quế Lâm" />
+    <meta name="title" content="MiBand 4 Display" />
+    <meta name="language" content="Vietnamese" />
+    <link href="#" hreflang="vi-vn" rel="alternate" title="MiBand 4 Display" type="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
+</head>
+<body>
+    <div>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn"></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="faq.html">FAQ</a>
+				<a href="instructions.html">Hướng dẫn cài đặt</a>
+				<a href="instructions1.html" class="dropdown-child">Màn hình</a>
+				<a href="instructions2.html" class="dropdown-child">Icon</a>
+				<a href="instructions3.html" class="dropdown-child">Font</a>
+			</div>
+		</div>
+        <div class="title">Hướng dẫn cài đặt</div>
+        <div class="step"><strong>1.</strong> <strong>Tải xuống</strong> màn hình mới / <strong>Mở</strong> màn hình đã lưu.</div>
+        <img class="responsive-image" src="../img/help-01.jpg">
+        <div class="note">(Tùy chọn tải xuống là tùy thuộc vào tác giả)</div>
+        <div class="step"><strong>2.</strong> Nhấn nút <strong>Cài đặt</strong>, ứng dụng <strong>Mi Fit</strong> sẽ được mở. Đảm bảo ứng dụng này và miband của bạn đã được kết nối.</div>
+        <img class="responsive-image" src="../img/help-02.jpg">
+        <div class="step"><strong>3.</strong> Nhấn <strong>Profile</strong> trong điều hướng dưới cùng.</div>
+        <img class="responsive-image" src="../img/help-03.jpg">
+        <div class="step"><strong>4.</strong> Nhấn dòng <strong>Mi Smart Band 4</strong>.</div>
+        <img class="responsive-image" src="../img/help-04.jpg">
+        <div class="step"><strong>5.</strong> Nhấn dòng <strong>Band display settings</strong>.</div>
+        <img class="responsive-image" src="../img/help-05.jpg">
+        <div class="step"><strong>6a.</strong> Nhấn tab <strong>thứ ba</strong>. Nếu chỉ có <strong><i>hai</i></strong> tab, hãy chuyển đến bước <strong><i>6b</i></strong>.</div>
+        <img class="responsive-image" src="../img/help-06.jpg">
+        <div class="step"><strong>6b.</strong> Nhấn tab <strong>thứ nhất</strong>.</div>
+        <img class="responsive-image" src="../img/help-07.jpg">
+        <div class="step"><strong>7.</strong> Chọn <strong>màn hình được chỉ định</strong> và <strong>Đồng bộ</strong>.</div>
+        <div id="author">made by 2U Software</div>
+        <button id="btn_reload" class="hidden" onClick="reloadAndroidWebView()">Tải lại</button>
+    </div>
+</body>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+</script>
+</html>
