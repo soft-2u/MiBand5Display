@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>MiBand 4 Display | Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="category" content="news" />
+    <meta name="keywords" content="miband 4, mi smart band 5, gallery" />
+    <meta name="description" content="great gallery for mi smart band 5" />
+    <meta name="msnbot" content="great gallery for mi smart band 5" />
+    <meta name="author" content="Lý Quế Lâm" />
+    <meta name="title" content="MiBand 4 Display" />
+    <meta name="language" content="Vietnamese" />
+    <link href="#" hreflang="vi-vn" rel="alternate" title="MiBand 4 Display" type="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
+</head>
+<body>
+    <div>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn"></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="faq.html">FAQ</a>
+				<a href="instructions.html">Hướng dẫn cài đặt</a>
+				<a href="instructions1.html" class="dropdown-child">Màn hình</a>
+				<a href="instructions2.html" class="dropdown-child">Icon</a>
+				<a href="instructions3.html" class="dropdown-child">Font</a>
+			</div>
+		</div>
+        <div class="title">Hướng dẫn cài đặt</div>
+        <div class="center">
+          <button onClick="location.href='instructions1.html'">Màn hình</button>
+          <!-- <button class="disabled" onClick="location.href='instructions2.html'">Icon</button> -->
+          <!-- <button class="disabled" onClick="location.href='instructions3.html'">Font</button> -->
+        </div>
+    </div>
+</body>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+</script>
+</html>
