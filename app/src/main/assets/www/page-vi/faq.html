@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>MiBand 4 Display | Help</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="category" content="news" />
+    <meta name="keywords" content="miband 4, mi smart band 5, gallery" />
+    <meta name="description" content="great gallery for mi smart band 5" />
+    <meta name="msnbot" content="great gallery for mi smart band 5" />
+    <meta name="author" content="Lý Quế Lâm" />
+    <meta name="title" content="MiBand 4 Display" />
+    <meta name="language" content="Vietnamese" />
+    <link href="#" hreflang="vi-vn" rel="alternate" title="MiBand 4 Display" type="text/html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+    <link rel="stylesheet" type="text/css" href="../main.css"/>
+</head>
+<body>
+    <div>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn"></button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="faq.html">FAQ</a>
+				<a href="instructions.html">Hướng dẫn cài đặt</a>
+				<a href="instructions1.html" class="dropdown-child">Màn hình</a>
+				<!-- <a href="instructions2.html" class="dropdown-child">Icon</a>
+				<a href="instructions3.html" class="dropdown-child">Font</a> -->
+			</div>
+		</div>
+        <div class="title">FAQ</div>
+
+		<p><strong>Màn hình:</strong></p>
+		<button type="button" class="collapsible">Không thể tải về</button>
+		<div class="content">
+		  <p>Sau khi bấm nút <strong>Tải về</strong>, vui lòng chọn <strong>Cho phép truy cập Bộ nhớ lưu trữ</strong>. Sau đó hãy thử lại.</p>
+		</div>
+		<button type="button" class="collapsible">Không xuất hiện trong ứng dụng Mi Fit</button>
+		<div class="content">
+		  <p>Sau khi bấm nút <strong>Tải về</strong>, chắc chắn rằng bạn đã bấm nút <strong>Cài đặt</strong>. Sau đó hộp thoại lựa chọn phương thức xuất hiện, hãy chọn <strong>Thêm vào ứng dụng Mi Fit</strong>. Nếu vẫn không xuất hiện, hãy thử đóng và mở lại ứng dụng Mi Fit.</p>
+		  <p><strong>Ghi chú:</strong> nếu hộp thoại lựa chọn phương thức không xuất hiện, hãy vào <img class="icon" src="../img/settings.png" /><strong>Cài đặt</strong> và <strong>Đặt lại phương thức cài đặt</strong>.</p>
+		  <p><strong>Ghi chú:</strong> ngoài ra, bạn có thể cài đặt Màn hình nhanh hơn bằng cách <strong>Đồng bộ qua Bluetooth</strong>.</p>
+		  <p><i>Với Android 11 trở lên: Đồng bộ qua Bluetooth là cách duy nhất để cài đặt.</i></p>
+		</div>
+		<br/>
+		<p><strong>Chung:</strong></p>
+		<button type="button" class="collapsible">Đồng bộ qua Bluetooth thế nào?</button>
+		<div class="content">
+		  <p>Chỉ cần mở ứng dụng Mi Fit một lần và kết nối với mi smart band 5 của bạn. Sau đó chuyển qua ứng dụng này, chọn Màn hình/Icon/Font cần cài đặt. Hộp thoại lựa chọn phương thức xuất hiện, hãy chọn <strong>Đồng bộ qua Bluetooth</strong>. Tiến trình Đồng bộ sẽ diễn ra.</p>
+		  <p><strong>Ghi chú:</strong> nếu hộp thoại lựa chọn phương thức không xuất hiện, hãy vào <img class="icon" src="../img/settings.png" /><strong>Cài đặt</strong> và <strong>Đặt lại phương thức cài đặt</strong>.</p>
+		</div>
+		<button type="button" class="collapsible">Không dò thấy thiết bị mi smart band 5</button>
+		<div class="content">
+		  <p>Chắc chắn rằng dịch vụ <strong>Bluetooth</strong> và <strong>Định vị</strong> đang bật, để mi smart band 5 gần điện thoại của bạn.</p>
+		  <p><strong>Ghi chú:</strong> dịch vụ <strong>Định vị</strong> được Android bắt buộc bật kèm theo kể từ Android 6.</p>
+		</div>
+		<button type="button" class="collapsible">Tiến trình Đồng bộ qua Bluetooth thất bại</button>
+		<div class="content">
+		  <p>Hãy để mi smart band 5 gần điện thoại của bạn. Giữ điện thoại luôn sáng, tránh tắt màn hình hoặc khóa điện thoại. Yêu cầu bắt buộc: dịch vụ <strong>Bluetooth</strong> và <strong>Định vị</strong> đang bật.</p>
+		  <p><strong>Ghi chú:</strong> dịch vụ <strong>Định vị</strong> được Android bắt buộc bật kèm theo kể từ Android 6.</p>
+		</div>
+    </div>
+</body>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
+	
+	
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "block";
+		}
+	  });
+	}
+</script>
+</html>

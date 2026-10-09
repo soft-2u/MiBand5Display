@@ -1,0 +1,142 @@
+html, body {
+	margin: 0;
+}
+body {
+	padding: 15px 20px 30px 20px;
+}
+body, button, a {
+	font-family: 'Roboto', Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #373D3F;
+}
+button {
+  background-color: #f1f1f1;
+	border: none;
+	font-family: 'Roboto', Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 14px;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #F9AA33;
+	border: none;
+	color: #fff;
+}
+.title {
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.step {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.note {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-style: italic;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.center button {
+  margin-top: 20px; font-weight: bold; 
+	padding: 8px 40px;
+	border-radius: 5px;
+	display: block;
+	width: 200px;
+}
+.collapsible {margin-top: 10px; }
+#author {
+	color: #ccc;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+.responsive-image {width: 100%;  height: auto;} 
+.icon {margin: 0 2px -2px}
+
+
+.dropbtn {
+	background-color: #fff;
+	background-image: url("img/btn_menu.png");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-position: center;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #fff;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #F9AA33; color: #fff;}
+
+.show {display: block;}
+.dropdown-child {padding-left: 32px !important}
+
+/********************/
+
+.collapsible {
+	background-color: #f1f1f1;
+	cursor: pointer;
+	padding: 10px 14px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+}
+
+.collapsible:hover {
+  background-color: #F9AA33;
+  color: #fff;
+}
+.active {
+  background-color: #f1f1f1;
+  color: #F9AA33;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #FAFAFA;
+}
+/********************/
